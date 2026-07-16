@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #1d1d1f;
+  --ink-muted: #6e6e73;
+  /* Hero palette — richest blues (unchanged) */
+  --mist-deep: #a8ccef;
+  --mist-rich: #b8d7f4;
+  --mist-mid: #cbe4f8;
+  --mist-light: #daedfb;
+  --mist-pale: #e8f4fc;
+  --white: #f6fbff;
+  /* Progressive fade ladder — each step closer to white */
+  --fade-1: #daedfb;
+  --fade-2: #e4f1fc;
+  --fade-3: #eaf5fc;
+  --fade-4: #f0f8fd;
+  --fade-5: #f5fafe;
+  --fade-6: #f9fbfe;
+  --fade-7: #fcfdff;
+  --fade-8: #ffffff;
+  --brand-25: var(--fade-3);
+  --brand-50: var(--fade-2);
+  --brand-100: var(--mist-mid);
+  --brand-150: var(--mist-rich);
+  --brand-200: #b0d0f2;
+  --brand-300: #9cc3ec;
+  --surface: var(--fade-2);
+  --surface-elevated: var(--fade-8);
+  --accent: #0071e3;
+  --accent-hover: #0077ed;
+  --accent-light: var(--mist-mid);
+  --line: #d2d2d7;
+  --line-brand: var(--brand-200);
+  --background: var(--fade-2);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-brand-25: var(--brand-25);
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-150: var(--brand-150);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-line: var(--line);
+  --color-line-brand: var(--line-brand);
+  --color-text-primary: var(--ink);
+  --color-text-secondary: var(--ink-muted);
+  --color-light: var(--surface);
+  --color-border: var(--line);
+  --color-secondary: var(--ink);
+  --color-mist-deep: var(--mist-deep);
+  --color-mist-rich: var(--mist-rich);
+  --color-mist-mid: var(--mist-mid);
+  --color-mist-light: var(--mist-light);
+  --color-mist-pale: var(--mist-pale);
+  --color-fade-1: var(--fade-1);
+  --color-fade-2: var(--fade-2);
+  --color-fade-3: var(--fade-3);
+  --color-fade-4: var(--fade-4);
+  --color-fade-5: var(--fade-5);
+  --color-fade-6: var(--fade-6);
+  --color-fade-7: var(--fade-7);
+  --color-fade-8: var(--fade-8);
+  --font-sans: var(--font-inter);
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border border-brand-300/25 bg-fade-8/90 backdrop-blur-sm;
+  }
+
+  .surface-card-soft {
+    @apply rounded-2xl border border-brand-300/20 bg-fade-8/75 backdrop-blur-sm;
+  }
+
+  .surface-card-feature {
+    @apply rounded-2xl border border-brand-300/30 bg-fade-8/80 backdrop-blur-sm;
+  }
+
+  /* Hero — richest blue (unchanged) */
+  .bg-gradient-hero {
+    background: linear-gradient(
+      180deg,
+      var(--mist-deep) 0%,
+      var(--mist-rich) 12%,
+      var(--mist-mid) 28%,
+      var(--mist-light) 52%,
+      var(--mist-pale) 78%,
+      var(--white) 100%
+    );
+  }
+
+  /* Progressive fade — each section one step closer to white */
+  .bg-gradient-fade-1 {
+    background: linear-gradient(
+      180deg,
+      var(--white) 0%,
+      var(--fade-2) 50%,
+      var(--fade-3) 100%
+    );
+  }
+
+  .bg-gradient-fade-2 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-3) 0%,
+      var(--fade-4) 100%
+    );
+  }
+
+  .bg-gradient-fade-3 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-4) 0%,
+      var(--fade-5) 100%
+    );
+  }
+
+  .bg-gradient-fade-4 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-5) 0%,
+      var(--fade-6) 100%
+    );
+  }
+
+  .bg-gradient-fade-5 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-6) 0%,
+      var(--fade-7) 100%
+    );
+  }
+
+  .bg-gradient-fade-6 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-7) 0%,
+      var(--fade-8) 100%
+    );
+  }
+
+  .bg-gradient-fade-7 {
+    background: var(--fade-8);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--mist-light);
+  color: var(--ink);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--brand-200);
+  color: var(--ink);
+}

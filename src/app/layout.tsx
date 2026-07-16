@@ -1,0 +1,39 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { siteConfig } from "@/data/content";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: `${siteConfig.name} | Invest in Sustainability`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
