@@ -1,44 +1,95 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { hero } from "@/data/content";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function Hero() {
+  const videoContainerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
+
+  const VISIBILITY_THRESHOLD = 0.15;
+
+  useEffect(() => {
+    const container = videoContainerRef.current;
+    const video = videoRef.current;
+    if (!container || !video) return;
+
+    video.muted = false;
+    video.volume = 1;
+
+    const playIfVisible = () => {
+      if (!videoContainerRef.current || !videoRef.current) return;
+      const rect = videoContainerRef.current.getBoundingClientRect();
+      const visibleHeight =
+        Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+      const ratio = Math.max(0, visibleHeight) / rect.height;
+      if (ratio >= VISIBILITY_THRESHOLD) {
+        videoRef.current.play().catch(() => {});
+      }
+    };
+
+    const startPlayback = async () => {
+      try {
+        await video.play();
+      } catch {
+        /* autoplay may be blocked until user interaction */
+      }
+    };
+
+    startPlayback();
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!videoRef.current) return;
+        if (entry.intersectionRatio >= VISIBILITY_THRESHOLD) {
+          videoRef.current.play().catch(() => {});
+        } else {
+          videoRef.current.pause();
+        }
+      },
+      { threshold: [0, VISIBILITY_THRESHOLD, 0.5, 1] }
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, []);
 
   const toggleSound = async () => {
     const video = videoRef.current;
     if (!video) return;
 
-    const nextMuted = !isMuted;
+    const nextMuted = !video.muted;
     video.muted = nextMuted;
     if (!nextMuted) {
       video.volume = 1;
-      try {
-        await video.play();
-      } catch {
-        /* playback may already be running */
-      }
     }
     setIsMuted(nextMuted);
+
+    if (!video.paused) return;
+    try {
+      await video.play();
+    } catch {
+      /* playback blocked */
+    }
   };
 
   return (
     <section className="bg-gradient-hero">
       <div className="px-5 pt-6 sm:px-10 md:px-14 md:pt-8 lg:px-20">
-        <div className="relative mx-auto max-w-[1440px] overflow-hidden rounded-3xl ring-1 ring-brand-300/35 shadow-sm">
+        <div
+          ref={videoContainerRef}
+          className="relative mx-auto max-w-[1440px] overflow-hidden rounded-3xl ring-1 ring-brand-300/35 shadow-sm"
+        >
           <video
             ref={videoRef}
             className="aspect-video w-full object-cover"
-            autoPlay
-            muted
             loop
             playsInline
-            controls
+            preload="auto"
             poster="/images/hero-fallback.jpg"
             aria-label="American Global Partner — global people connecting with America"
             onVolumeChange={() => {
