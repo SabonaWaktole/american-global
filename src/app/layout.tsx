@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} | Invest in Sustainability`,
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

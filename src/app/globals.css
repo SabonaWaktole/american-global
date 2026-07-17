@@ -152,6 +152,14 @@
   }
 
   .bg-gradient-fade-7 {
+    background: linear-gradient(
+      180deg,
+      var(--fade-7) 0%,
+      var(--fade-8) 100%
+    );
+  }
+
+  .bg-gradient-footer {
     background: var(--fade-8);
   }
 }

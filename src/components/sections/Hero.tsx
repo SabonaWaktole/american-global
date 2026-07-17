@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
-import { hero, stats } from "@/data/content";
+import { hero } from "@/data/content";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
@@ -40,7 +40,7 @@ export function Hero() {
             playsInline
             controls
             poster="/images/hero-fallback.jpg"
-            aria-label="American Global Partner company overview"
+            aria-label="American Global Partner — global people connecting with America"
             onVolumeChange={() => {
               if (videoRef.current) {
                 setIsMuted(videoRef.current.muted);
@@ -72,39 +72,24 @@ export function Hero() {
         </div>
       </div>
 
-      <Container narrow className="pb-10 pt-12 text-center md:pb-14 md:pt-16">
-        <p className="text-sm font-medium text-ink-muted md:text-base">
-          {hero.subheadline}
-        </p>
-        <h1 className="mt-3 text-5xl font-semibold tracking-tight text-ink md:text-7xl md:leading-[1.05]">
+      <Container narrow className="pb-20 pt-12 text-center md:pb-28 md:pt-16">
+        <h1 className="text-5xl font-semibold tracking-tight text-ink md:text-7xl md:leading-[1.05]">
           {hero.headline}
         </h1>
-        <p className="mx-auto mt-5 max-w-[640px] text-lg text-ink-muted md:text-2xl md:leading-snug">
+        <p className="mx-auto mt-6 max-w-[720px] text-lg text-ink-muted md:text-2xl md:leading-snug">
           {hero.description}
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Button href="#contact" size="large">
             {hero.primaryCta}
           </Button>
-          <Button href="#services" variant="secondary" size="large">
+          <Button href="#benefits" variant="secondary" size="large">
             {hero.secondaryCta}
           </Button>
+          <Button href="#process" variant="ghost" size="large">
+            {hero.tertiaryCta}
+          </Button>
         </div>
-      </Container>
-
-      <Container className="pb-20 pt-4 md:pb-28 md:pt-8">
-        <dl className="surface-card-feature grid grid-cols-2 gap-6 px-6 py-10 md:grid-cols-4 md:gap-8 md:rounded-3xl md:px-10 md:py-12">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <dt className="text-3xl font-semibold tracking-tight text-ink md:text-5xl">
-                {stat.value}
-              </dt>
-              <dd className="mt-2 text-sm text-ink-muted md:text-base">
-                {stat.label}
-              </dd>
-            </div>
-          ))}
-        </dl>
       </Container>
     </section>
   );

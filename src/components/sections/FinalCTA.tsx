@@ -4,15 +4,15 @@ import { Container } from "@/components/ui/Container";
 
 export function FinalCTA() {
   return (
-    <section id="contact" className="bg-gradient-fade-6 py-20 md:py-28">
+    <section id="contact" className="bg-gradient-fade-7 py-20 md:py-28">
       <Container narrow className="text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-ink md:text-5xl md:leading-tight">
           {finalCta.title}
         </h2>
-        <p className="mx-auto mt-5 max-w-[640px] text-lg text-ink-muted md:text-xl">
+        <p className="mx-auto mt-5 max-w-[720px] text-lg text-ink-muted md:text-xl">
           {finalCta.description}
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Button href={`mailto:${contact.email}`} size="large">
             {finalCta.primaryCta}
           </Button>

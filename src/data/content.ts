@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "American Global Partner",
   legalName: "American Global Partner LLC",
-  tagline: "American Global Platform for Sustainable Development",
+  tagline: "Your Global Partner for American Dreams",
   description:
-    "American Global Partner LLC connects qualified investors, strategic partners, and project developers with renewable energy infrastructure opportunities in the United States and worldwide.",
+    "American Global Partner LLC is a global partnership platform connecting people worldwide with carefully structured opportunities and potential benefits linked to the American economy.",
   url: "https://americanglobalpartner.com",
   location: "Miami, FL",
 };
@@ -17,255 +17,238 @@ export const contact = {
   phoneHref: "tel:+18177151156",
 };
 
-export const stats = [
-  { value: "$103M+", label: "Assets Under Management", note: "As of May 2023" },
-  { value: "12.16%", label: "Realized Return (IRR)", note: "As of May 2023" },
-  { value: "$1,000", label: "Minimum Investment", note: "Global access" },
-  { value: "20 Years", label: "PPA Guarantee", note: "Government-backed" },
-];
-
 export const hero = {
-  headline: "Partner With American Clean Energy Growth",
-  subheadline: siteConfig.tagline,
+  headline: "Your Global Partner for American Dreams",
   description:
-    "We connect qualified investors, strategic partners, and project developers with renewable energy infrastructure opportunities through compliant business structures, professional due diligence, and long-term sustainability goals.",
+    "Connecting people worldwide with carefully structured opportunities, U.S.-dollar benefits, family protection, education support, and sustainable pathways linked to the American economy.",
   primaryCta: "Become a Global Partner",
-  secondaryCta: "Explore Services",
+  secondaryCta: "Explore Opportunities",
+  tertiaryCta: "Discover How It Works",
 };
 
-export const trustPartners = [
-  "Government PPAs",
-  "B2G Partnerships",
-  "Institutional Investors",
-  "Family Offices",
-  "Project Developers",
-  "Strategic Partners",
-  "U.S. Insurance Partners",
-  "ESG Standards",
-];
-
-export const companyOverview = {
-  title: "Investing in Change, Leading Growth",
+export const globalVision = {
+  title: "A Bridge Without Borders",
   description:
-    "Our mission is to create profitable investment opportunities while driving global sustainability and social progress. Built on a foundation of innovation and responsibility, we connect investors to government-backed projects that generate reliable returns and lasting impact.",
+    "American Global Partner LLC exists to create a trusted global pathway—connecting people around the world with lawful opportunities and potential benefits associated with the American economy.",
   secondary:
-    "We accelerate the transition to renewable energy by linking institutional investors with government-backed infrastructure, protecting investments while delivering measurable environmental impact.",
-  cta: "Get to Know Us",
+    "Millions admire the strength of the U.S. economy yet face geographical, informational, financial, and institutional barriers. We aim to become the bridge between global communities and suitable opportunities connected to the United States.",
+  platformIntro:
+    "We are building an international platform through which partners may explore pathways involving:",
+  platformItems: [
+    "U.S.-dollar-denominated economic benefits through legally approved structures",
+    "Proposed life-insurance benefits through reputable insurance providers",
+    "Proposed education-support, education-insurance, or scholarship programs",
+    "Participation in sustainable American businesses and projects",
+    "Long-term financial and family-development opportunities",
+    "Partnerships connecting international communities with the United States",
+  ],
+  dreamsNote:
+    "\"American Dreams\" represents the opportunity to benefit from America's economic strength, globally recognized currency, business environment, financial institutions, innovation, insurance industry, educational resources, and sustainable investment opportunities—not immigration, residency, or guaranteed employment.",
 };
 
-export const services = [
-  {
-    id: "ppa-projects",
-    title: "Foreign Government Power Purchase Agreement Projects",
-    description:
-      "We develop solar, wind, hydro, and biomass projects backed by government Power Purchase Agreements (PPAs), connecting global investors to secure opportunities.",
-    icon: "globe",
-  },
-  {
-    id: "institutional",
-    title: "Institutional-Grade Renewable Projects",
-    description:
-      "Access secure, high-yield opportunities backed by the world's largest economy with government-guaranteed PPAs ensuring long-term, risk-mitigated returns.",
-    icon: "building",
-  },
-  {
-    id: "partner-benefits",
-    title: "Value-Added Long-Term Partner Benefit Programs",
-    description:
-      "Earn passive income through secure, high-yield investments backed by government agreements, with exclusive partner benefits included.",
-    icon: "shield",
-  },
-  {
-    id: "dividend",
-    title: "Business Partnership With Dividend Benefits",
-    description:
-      "Invest in a sustainable future while securing consistent financial returns through our dividend-based investment model supported by government PPAs.",
-    icon: "chart",
-  },
-  {
-    id: "insurance",
-    title: "Free Life Insurance for Partners",
-    description:
-      "Every equity partner receives complimentary 20-year life insurance coverage issued by U.S. insurance companies, with benefits paid in U.S. dollars.",
-    icon: "heart",
-  },
-  {
-    id: "scholarships",
-    title: "Scholarships for Underprivileged Children",
-    description:
-      "A portion of green energy profits funds scholarships for children in need—tuition, school supplies, and essential learning resources.",
-    icon: "graduation",
-  },
-];
+export const whyAmerica = {
+  title: "Connected to the Strength of America",
+  description:
+    "Our platform is rooted in the scale, stability, and global influence of the U.S. economy—presented responsibly and without suggesting that participation is risk-free.",
+  points: [
+    {
+      title: "A Diverse Global Economy",
+      description:
+        "The United States offers one of the world's largest and most diversified economies—supporting a wide range of business, financial, and partnership pathways.",
+    },
+    {
+      title: "The U.S. Dollar",
+      description:
+        "The global importance of the U.S. dollar creates meaningful opportunities for partners seeking internationally recognized economic value.",
+    },
+    {
+      title: "Financial & Insurance Institutions",
+      description:
+        "America's established financial and insurance sectors support carefully structured programs involving family protection and long-term planning.",
+    },
+    {
+      title: "Innovation & Entrepreneurship",
+      description:
+        "A culture of innovation and enterprise creates environments where sustainable businesses and forward-looking partnerships can develop.",
+    },
+    {
+      title: "Capital Markets",
+      description:
+        "Developed capital markets and professional infrastructure support structured participation in American economic opportunities.",
+    },
+    {
+      title: "Education & Long-Term Growth",
+      description:
+        "Educational resources and long-term development pathways can support families building confidence for the future.",
+    },
+  ],
+};
 
-export const whyChooseUs = [
-  {
-    title: "Government-Backed Security",
-    description:
-      "We exclusively pursue B2G projects secured by Power Purchase Agreements with sovereign governments, including 20-year government buy-back guarantees.",
-    icon: "lock",
-  },
-  {
-    title: "Risk Mitigation First",
-    description:
-      "Our B2G model transfers primary market risk to government entities committed to clean energy transitions, offering stable, predictable returns.",
-    icon: "shield-check",
-  },
-  {
-    title: "Commitment to Sustainability",
-    description:
-      "Every project adheres to rigorous ESG standards, ensuring investments contribute to economic stability and global sustainability.",
-    icon: "leaf",
-  },
-  {
-    title: "Transparent Reporting",
-    description:
-      "Complete project documentation, government agreements, and clear risk assessments with periodic reports and distributions.",
-    icon: "document",
-  },
-  {
-    title: "Social Impact Programs",
-    description:
-      "Scholarships and community impact programs empower future energy leaders through the American Global Partner Education Initiative.",
-    icon: "users",
-  },
-  {
-    title: "Unprecedented Partner Benefits",
-    description:
-      "Complimentary 20-year life insurance coverage demonstrates that your partnership matters beyond the balance sheet.",
-    icon: "gift",
-  },
-];
-
-export const industries = [
-  {
-    title: "Solar Energy",
-    description:
-      "Utility-scale and hybrid solar projects combining generation with battery storage for grid stability.",
-  },
-  {
-    title: "Wind Power",
-    description:
-      "Large-scale wind energy developments backed by government PPAs across multiple regions.",
-  },
-  {
-    title: "Hydroelectric",
-    description:
-      "Sustainable hydro projects delivering reliable clean energy with long-term government agreements.",
-  },
-  {
-    title: "Biomass Energy",
-    description:
-      "Biomass projects contributing to diversified renewable energy portfolios worldwide.",
-  },
-  {
-    title: "Energy Storage",
-    description:
-      "Battery storage projects providing grid flexibility and supporting the global energy transition.",
-  },
-  {
-    title: "Carbon Reduction",
-    description:
-      "Ecosystem restoration and carbon reduction initiatives aligned with verified environmental standards.",
-  },
-];
-
-export const projects = [
-  {
-    id: "project-1",
-    title: "Government-Backed Solar Infrastructure",
-    location: "United States",
-    description:
-      "Institutional-grade solar development secured by sovereign government Power Purchase Agreements.",
-    image: "/images/solar.jpg",
-    isPlaceholder: true,
-  },
-  {
-    id: "project-2",
-    title: "Hybrid Solar & Storage Project",
-    location: "Global",
-    description:
-      "Combined generation and battery storage asset delivering grid stability and competitive returns.",
-    image: "/images/overview.jpg",
-    isPlaceholder: true,
-  },
-  {
-    id: "project-3",
-    title: "Renewable Energy Portfolio",
-    location: "Worldwide",
-    description:
-      "Multi-technology renewable energy investments spanning solar, wind, hydro, and biomass.",
-    image: "/images/hero-fallback.jpg",
-    isPlaceholder: true,
-  },
-];
+export const partnerBenefits = {
+  title: "Opportunities Designed for a Better Future",
+  description:
+    "Each pathway is presented as a proposed or potential benefit—subject to applicable laws, eligibility requirements, underwriting, contracts, professional approval, and program availability.",
+  items: [
+    {
+      id: "usd-opportunities",
+      title: "U.S.-Dollar Opportunities",
+      description:
+        "Explore structured pathways that may provide economic benefits valued in U.S. dollars through legally approved participation models.",
+      icon: "globe",
+    },
+    {
+      id: "family-protection",
+      title: "Family Protection",
+      description:
+        "Proposed life-insurance benefits through reputable U.S. insurance providers—subject to underwriting, eligibility, age, health, and country availability.",
+      icon: "heart",
+    },
+    {
+      id: "education-support",
+      title: "Education Support",
+      description:
+        "Proposed education-support, education-insurance, and scholarship programs designed to help families invest in learning and future opportunity.",
+      icon: "graduation",
+    },
+    {
+      id: "sustainable-investments",
+      title: "Sustainable Investments",
+      description:
+        "Participation in sustainable American businesses and projects—including renewable energy and battery storage—as part of a broader economic platform.",
+      icon: "leaf",
+    },
+    {
+      id: "global-partnerships",
+      title: "Global Partnerships",
+      description:
+        "Connect with a growing international community exploring responsible pathways to U.S.-linked economic, family, and educational opportunities.",
+      icon: "users",
+    },
+    {
+      id: "long-term-impact",
+      title: "Long-Term Impact",
+      description:
+        "Pursue long-term financial, family, educational, and social benefits through approved programs and formal partnership agreements.",
+      icon: "chart",
+    },
+  ],
+};
 
 export const processSteps = [
   {
     step: "01",
-    title: "Apply & Suitability Check",
+    title: "Connect",
     description:
-      "Submit a brief application so we can understand your investment goals and confirm basic suitability. This step is for informational purposes only.",
+      "Learn about American Global Partner LLC, our global mission, and the programs available to international partners.",
   },
   {
     step: "02",
-    title: "Review Documents & Sign Agreements",
+    title: "Explore",
     description:
-      "Qualified applicants receive relevant project materials and legal documents to review at their own pace before proceeding.",
+      "Review suitable partnership or participation pathways aligned with your goals, eligibility, and country of residence.",
   },
   {
     step: "03",
-    title: "Transfer Funds & Receive Updates",
+    title: "Qualify",
     description:
-      "Once funded, investors participate through the project structure and receive periodic reports and distributions in accordance with terms.",
+      "Complete applicable eligibility reviews, suitability checks, and compliance procedures with full transparency.",
   },
   {
     step: "04",
-    title: "Ongoing Compliance & Impact",
+    title: "Participate",
     description:
-      "Every project follows strict legal and regulatory standards with transparent reporting on financial returns and environmental impact.",
+      "Enter an approved program through proper agreements, documentation, and professionally structured arrangements.",
+  },
+  {
+    step: "05",
+    title: "Grow",
+    description:
+      "Pursue long-term economic, family, educational, or social benefits in accordance with program terms and applicable laws.",
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Becoming a partner with American Global Partner, LLC was one of the best financial decisions I've made. Not only do I receive consistent dividend returns, but I also get a fully paid life insurance policy for 20 years—something I never expected from an investment platform. This business truly prioritizes its partners, offering both financial rewards and personal security.",
-    author: "Sophia L.",
-    role: "Equity Partner",
-  },
-];
+export const sustainablePortfolio = {
+  title: "Building Value Through Sustainable American Opportunities",
+  description:
+    "Renewable energy, solar, battery storage, and other sustainable investments form the commercial foundation supporting our wider global vision—not the entirety of who we are.",
+  hierarchyNote:
+    "Global Vision → American Economic Opportunities → Sustainable Business & Investment Platforms → Partner Benefits",
+  sectors: [
+    {
+      title: "Solar & Battery Storage",
+      description:
+        "Solar power and battery-storage projects as examples of productive, sustainable American assets that may support long-term commercial value.",
+    },
+    {
+      title: "Wind & Hydro",
+      description:
+        "Wind and hydroelectric developments as part of a diversified sustainable investment portfolio connected to the U.S. economy.",
+    },
+    {
+      title: "Biomass & Thermal",
+      description:
+        "Biomass and thermal energy opportunities contributing to a broader range of sustainable American business participation.",
+    },
+    {
+      title: "Future Opportunities",
+      description:
+        "Additional sustainable businesses, projects, and economic pathways may be introduced as the platform expands responsibly over time.",
+    },
+  ],
+};
+
+export const trustTransparency = {
+  title: "Built on Trust, Compliance, and Long-Term Partnership",
+  description:
+    "We are committed to presenting opportunities clearly, responsibly, and in full alignment with applicable legal and regulatory standards.",
+  disclosures: [
+    "All opportunities are subject to applicable laws, formal agreements, and individual eligibility requirements.",
+    "Insurance benefits depend on provider approval, underwriting, eligibility, age, health, and country availability—they are not guaranteed.",
+    "Scholarships and educational benefits depend on approved program rules, available funding, and participant eligibility.",
+    "Investments involve risks, and income or returns are not guaranteed.",
+    "Programs may not be available in every country or jurisdiction.",
+    "American Global Partner LLC does not provide immigration guarantees, visas, or residency services.",
+    "Returns, income, insurance, and scholarships must be understood as proposed or potential benefits—not promises.",
+  ],
+};
 
 export const navigation = [
-  { label: "About", href: "#overview" },
-  { label: "Services", href: "#services" },
+  { label: "Vision", href: "#vision" },
+  { label: "Benefits", href: "#benefits" },
+  { label: "Process", href: "#process" },
+  { label: "Portfolio", href: "#portfolio" },
 ];
 
 export const footerLinks = {
   company: [
-    { label: "About Us", href: "#overview" },
-    { label: "Services", href: "#services" },
+    { label: "Global Vision", href: "#vision" },
+    { label: "Partner Benefits", href: "#benefits" },
     { label: "How It Works", href: "#process" },
-    { label: "Projects", href: "#projects" },
+    { label: "Portfolio", href: "#portfolio" },
   ],
   resources: [
-    { label: "Investor Resources", href: "#contact" },
-    { label: "Scholarships", href: "#services" },
-    { label: "Legal Notice", href: "#contact" },
+    { label: "Trust & Compliance", href: "#trust" },
+    { label: "Contact", href: "#contact" },
   ],
 };
 
 export const finalCta = {
-  title: "Become a Strategic Clean Energy Partner",
+  title: "Your American Dream Can Begin with a Global Partnership",
   description:
-    "Connect with American Global Partner LLC to learn about future renewable energy and infrastructure opportunities through compliant, professionally structured project partnerships.",
+    "Join a growing international community exploring responsible pathways to U.S.-connected economic opportunities, family protection, education support, and sustainable development.",
   primaryCta: "Become a Global Partner",
-  secondaryCta: "Schedule a Consultation",
+  secondaryCta: "Contact Our Team",
 };
 
-export const missionVision = {
-  mission:
-    "We bridge the gap between visionary investors and government-secured renewable energy projects worldwide. Our mission is to democratize access to institutional-grade clean energy investments.",
-  vision:
-    "We envision a world where clean energy infrastructure is financed by a global community of partners who share in both the financial rewards and the pride of powering a sustainable future.",
+export const audience = {
+  title: "Created for People Worldwide",
+  description:
+    "Our platform welcomes individuals, families, entrepreneurs, qualified investors, institutions, and strategic partners seeking credible connections to the American economy.",
+  groups: [
+    "Individuals and families seeking U.S.-linked economic opportunities",
+    "Entrepreneurs and professionals outside the United States",
+    "International business partners and qualified investors",
+    "Supporters interested in family protection and education",
+    "Insurance providers, educational institutions, and project developers",
+  ],
 };
